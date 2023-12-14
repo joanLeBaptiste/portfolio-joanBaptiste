@@ -1,0 +1,729 @@
+/* fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,300&family=Poppins:wght@400;600&display=swap');
+
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    /* color: rrggbb; ---  format*/
+
+    --primary-color: #1b1f24;
+    --primary-color-hover: #274049;
+    --primary-light-color: #22282f;
+    --primary-theme-color: #12bdff;
+    --primary-white: #fff;
+    --primary-yellow: #ffba53;
+    --primary-yellow-hover: #ff8f8f;
+    --primary-grey: #969595;
+}
+
+.blue-span {
+    color: var(--primary-theme-color);
+}
+
+.grey-span {
+    color: var(--primary-grey);
+}
+
+.btn {
+    margin-top: 7px;
+    font-weight: 900;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--primary-theme-color);
+    border: 2px solid var(--primary-theme-color);
+    border-radius: 10px;
+
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 10px var(--primary-theme-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-white);
+}
+
+img {
+    /* image in responsive mode */
+
+    max-width: 150%;
+    height: auto;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+
+
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+.theme-picker {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.submit-btn {
+    font-weight: 900;
+    padding: 10px;
+    background-color: var(--primary-theme-color);
+    color: var(--primary-white);
+    border: 2px solid var(--primary-theme-color);
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--primary-white);
+}
+
+/* header styles */
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: var(--primary-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--primary-white);
+}
+
+header ul li a:hover {
+    color: var(--primary-theme-color);
+}
+
+header button {
+    font-weight: 900;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--primary-theme-color);
+    border: 2px solid var(--primary-theme-color);
+    border-radius: 10px;
+}
+
+header button:hover {
+    cursor: pointer;
+    background-color: var(--primary-theme-color);
+    color: var(--primary-white);
+}
+
+.logo-text {
+    letter-spacing: 2px;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.cancel-icon {
+    display: none;
+}
+
+
+/* hero section design */
+.hero-section img {
+        height: auto;
+    }
+.img-div {
+    height: 300px;
+    width: 300px;
+}
+
+.hero-section img {
+    border-radius: 50%;
+    background-color: var(--primary-light-color);
+    border: 2px solid var(--primary-theme-color);
+    box-shadow: 2px 2px 30px var(--primary-theme-color);
+
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.hero-text {
+    color: var(--primary-white);
+    padding: 20px;
+}
+
+.social-icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.social-icon a i.fa-instagram:hover {
+    border-radius: 5px;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.social-icon a i.fa-linkedin:hover {
+    color: #0072b1;
+}
+
+.social-icon a i.fa-github:hover {
+    color: #4078c0;
+}
+
+/* about section */
+.about-section {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+}
+
+/*///////ajout ABOUT */
+/* Styles pour la section about-section */
+/* Styles pour la section about-section */
+/* Styles pour la section about-section */
+.about-section {
+    display: flex;
+    flex-direction: column; /* Dispose les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Styles pour h1 */
+.about-section h1 {
+    margin-bottom: 10px; /* Ajoute une marge en bas de h1 pour séparer le texte des images */
+}
+
+/* Styles pour la container d'image */
+
+
+.white-text {
+    color: white; /* ou une autre valeur de couleur de texte en blanc */
+}
+
+/* Styles pour les images à l'intérieur de image-container */
+.image-container img {
+    width: 100%; /* Ajustez cette valeur pour définir la largeur désirée */
+    height: auto; /* Maintient le rapport hauteur/largeur et évite le débordement */
+    margin:  5px; /* Ajoute une marge à droite et à gauche des images pour les séparer */
+}
+
+/* Styles pour l'espace */
+.space {
+    height: 50px; /* Ajustez la hauteur de l'espace selon vos besoins */
+}
+/*///////fin ajout ABOUT */
+
+/* AJOUT SECTION PASSION */
+.passion-section {
+    background-color: var(--primary-light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+}
+/* Ajoutez ceci à votre fichier CSS existant */
+/*
+.passion-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 2px;
+}*/
+
+
+.passion-section .text {
+  flex: 1;
+  padding: 30px;
+}
+
+.passion-section .image img {
+  max-width: 55%;
+ min-width: 55%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.passion-section {
+    color: white; /* Remplacez #ff0000 par le code couleur de votre choix */
+}
+.passion-section p {
+    color: white; /* Remplacez #ff0000 par le code couleur de votre choix */
+    line-height: 1.5
+}
+.passion-section h1 {
+            position: relative;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 900px; /* Ajustez la marge selon vos besoins */
+        }
+
+
+
+/* FIN AJOUT SECTION PASSION */
+
+.img-div {
+    height: 300px;
+    width: 300px;
+}
+
+.contact-section img {
+    border-radius: 50%;
+    background-color: var(--primary-light-color);
+    border: 2px solid var(--primary-theme-color);
+    box-shadow: 2px 2px 30px var(--primary-theme-color);
+
+}
+
+.contact-section ol {
+    list-style: none;
+    color: var(--primary-white);
+    margin-left: 90px;
+
+}
+
+.contact-section ol li h1 {
+    color: var(--primary-white);
+    margin-bottom: 5px;
+    font-size: 50px;
+
+}
+
+.contact-section li {
+
+    margin-bottom: 10px;
+    color: var(--primary-grey);
+
+}
+
+.contact-section li a {
+    color: var(--primary-grey);
+
+}
+
+.contact-section li a:hover {
+    color: var(--primary-theme-color);
+
+}
+
+.contact-section li strong {
+    color: var(--primary-white);
+
+}
+
+/* service section */
+
+.service-section {
+    background-color: var(--primary-light-color);
+    color: var(--primary-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+.service-cards-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.service-card:hover {
+    background-color: var(--primary-color-hover);
+    box-shadow: 2px 5px 20px var(--primary-color);
+}
+
+.service-card a {
+    color: var(--primary-yellow);
+
+}
+
+.service-card a:hover {
+    color: var(--primary-yellow-hover);
+
+
+}
+
+.service-card p {
+    color: var(--primary-grey);
+    padding: 5px 0;
+}
+.service-card p {
+    font-size: 13px; /* Ajustez la valeur en fonction de vos besoins */
+}
+
+.service-card i {
+    padding: 10px;
+    background-color: var(--primary-theme-color);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* Ajoutez ceci à votre CSS */
+/*////////////////*/
+/*////////////////*/
+
+.service-card .card-content {
+    display: none;
+}
+
+.service-card.expanded .card-content {
+    display: block;
+}
+
+.service-cards-container {
+    display: flex;
+}
+
+.service-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.expand-arrow {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 70%;
+    margin-right: 10px;
+}
+
+.text-content {
+    flex-grow: 1;
+}
+
+.text-content p {
+    margin: 0;
+}
+
+.service-card {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Aligner verticalement au centre */
+}
+
+.card-content {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+}
+
+.card-content img {
+    max-width: 1500px; /* Définir une largeur maximale pour l'image */
+    margin-right: 15px; /* Ajouter de l'espace entre l'image et le texte */
+}
+
+.text-content {
+    flex: 1; /* Faire en sorte que le texte prenne tout l'espace restant */
+    
+}
+
+.card-content img {
+    border: 5px solid white; /* Épaisseur de la bordure et couleur blanche */
+    border-radius: 10px; /* Rayon de la bordure pour l'effet arrondi */
+}
+
+p {
+    line-height: 0.4; /* Vous pouvez ajuster cette valeur selon vos besoins */
+}
+
+
+/* Styles pour le text-content ////////// */
+.card-content .text-content {
+    font-size: 16px; /* Ajustez la taille de la police selon vos besoins */
+    line-height: 1.5; /* Espacement entre les lignes */
+    
+}
+
+/* Styles pour les paragraphes à l'intérieur de text-content */
+.card-content .text-content p {
+    margin: 0 0 10px 0; /* Marge en bas pour séparer les paragraphes */
+    color: white; /* Couleur du texte */
+    
+}
+
+/* Styles pour mettre en évidence certaines parties du texte */
+.card-content .text-content p.highlight {
+    font-weight: bold; /* Texte en gras */
+    color: white; /* Couleur bleue */
+}
+/* Styles pour le text-content */
+.card-content .text-content {
+    font-size: 16px; /* Ajustez la taille de la police selon vos besoins */
+    line-height: 0.2; /* Espacement entre les lignes */
+    color: white; /* Couleur du texte en blanc */
+    border: 5px solid white; /* Ajoute une bordure blanche */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 10px; /* Ajoute un espace intérieur pour améliorer l'apparence */
+    
+}
+
+/* Styles pour les paragraphes à l'intérieur de text-content */
+.card-content .text-content p {
+    margin: 5px 0; /* Marge en bas et en haut pour séparer les paragraphes */
+    
+}
+
+
+/* Styles pour mettre en évidence certaines parties du texte */
+
+
+
+/*////////////////*/
+/*FIN AJOUT */
+/*////////////////*/
+
+/* contact Section */
+
+.contact-section {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 80px;
+}
+
+.contact-section h1 {
+    color: var(--primary-white);
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+
+}
+
+.contact-info {
+   /* float: right;*/
+    width: 30%; /* Ajustez la largeur selon vos besoins */
+}
+
+.contact-section form input,
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+
+
+}
+
+/* footer section */
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 12px;
+    color: var(--primary-grey);
+}
+
+footer p a {
+    color: var(--primary-white);
+}
+
+footer p a:hover {
+    color: var(--primary-theme-color);
+}
+
+/* media queries  */
+/* Media Queries pour les écrans de taille moyenne */
+@media only screen and (max-width: 800px) {
+    /* Ajustez la taille du texte ou d'autres styles en fonction de vos besoins */
+    .hero-text {
+        font-size: 11px;
+        line-height: 1.4; /* Ajustez la hauteur de ligne pour améliorer la lisibilité */
+    }
+    .passion-section{
+        font-size: 9px;
+    }
+
+    /* Ajustements similaires pour d'autres parties de votre site si nécessaire */
+}
+
+/* Media Queries pour les écrans de petite taille */
+@media only screen and (max-width: 600px) {
+    .hero-text {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    .service-card p {
+    font-size: 9px; /* Ajustez la valeur en fonction de vos besoins */
+}
+    .passion-section{
+        font-size: 9px;
+    }
+    
+    /* Ajustements similaires pour d'autres parties de votre site si nécessaire */
+}
+@media (max-width: 860px) {
+
+    /* header media queries */
+    .header-links {
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        top: 0;
+        right: -100vh;
+        display: none;
+        background-color: var(--primary-color);
+        justify-content: start;
+        padding: 20px;
+        transition: right 0.3s ease;
+        box-shadow: 2px 5px 15px var(--primary-theme-color);
+    }
+
+    header ul {
+        margin-top: 40px;
+        flex-direction: column;
+        line-height: 3rem;
+    }
+
+    .cancel-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+
+    /* hero section media queries */
+    .hero-section {
+        flex-direction: column;
+    }
+
+    /* service section */
+    .service-cards-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        margin: 10px 0;
+    }
+
+    /* about section media queries */
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-section ol {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .contact-section img {
+        height: auto;
+    }
+
+    .contact-section ol li h1 {
+        font-size: 30px;
+    }
+
+    .about-section {
+        padding: 40px 30px;
+    }
+
+    /* contact section media queries */
+    .contact-section form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+
+    }
+    .hero-section {
+        flex-direction: column-reverse; /* Inverser l'ordre des éléments sur les petits écrans */
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-top: 20px; /* Ajout d'un espace au-dessus du texte pour éviter le chevauchement */
+    }
+
+    .service-card,
+    .about-section,
+    .passion-section,
+    .contact-section {
+        margin-bottom: 20px; /* Ajout d'un espace en bas des sections pour éviter le chevauchement */
+    }
+}
+    
+
+}
